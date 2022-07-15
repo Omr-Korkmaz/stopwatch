@@ -1,0 +1,29 @@
+.Btn-container{
+
+    background-color: black;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.btn-container__start {
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+}
+.Btn-container__status-1 {
+    background-color: black;
+    color: white;
+}
+.Btn-container__status-2 {
+    background-color: black;
+    color: white;
+}
+
+
