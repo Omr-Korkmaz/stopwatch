@@ -29,7 +29,7 @@ function App() {
       updatedM++;
       updatedS = 0;
     }
-    if (updatedMs === 100) {
+    if (updatedMs === 99) {
       updatedS++;
       updatedMs = 0;
     }
@@ -53,7 +53,7 @@ function App() {
   return (
     <div className="main-section">
 
-        <div className="stopwatch">
+        <div>
           <WatchDisplay time={time} />
           <ButtonShow
             status={status}

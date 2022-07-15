@@ -1,23 +1,24 @@
 import React from "react";
+import './WatchDisplay.css'
 
-function WatchDisplay(props) {
+function WatchDisplay({time}) {
   const h = () => {
-    if (props.time.h === 0) {
+    if (time.h === 0) {
       return "";
     } else {
       return (
-        <span>{props.time.h >= 10 ? props.time.h : "0" + props.time.h}</span>
+        <span>{time.h >= 10 ? time.h : "0" + time.h}</span>
       );
     }
   };
   return (
     <div className="stopwatch">
       {h()}&nbsp;&nbsp;
-      <span>{props.time.m >= 10 ? props.time.m : "0" + props.time.m}</span>
+      <span className="stopwatch__item">{time.m >= 10 ? time.m : "0" + time.m}</span>
       &nbsp;:&nbsp;
-      <span>{props.time.s >= 10 ? props.time.s : "0" + props.time.s}</span>
-      &nbsp;:&nbsp;
-      <span>{props.time.ms >= 10 ? props.time.ms : "0" + props.time.ms}</span>
+      <span className="stopwatch__item">{time.s >= 10 ? time.s : "0" + time.s}</span>
+      &nbsp;.&nbsp;
+      <span className="stopwatch__item">{time.ms >= 10 ? time.ms : "0" + time.ms}</span>
     </div>
   );
 }

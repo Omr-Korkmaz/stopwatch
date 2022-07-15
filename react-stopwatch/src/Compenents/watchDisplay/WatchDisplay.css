@@ -1,8 +1,16 @@
-.stopwatch{
+.stopwatch {
+  margin: auto, auto;
+  font-size: 3rem;
+  width: 60vw;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 6rem;
+}
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto, auto;
-
+.stopwatch__item {
+    line-height: 10rem;
+    width: 90px;
 }
